@@ -1,0 +1,13 @@
+h3{
+    font-size: 25spx;
+}
+
+p{
+    margin-top: 0%;
+}
+
+input{
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+}
