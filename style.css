@@ -15,9 +15,16 @@ input {
     border: 1px solid;
     border-radius: 5px;
     padding: 5px;
+   
+}
+
+.espaco {
     margin-right: 20px;
 }
 
+.espacoEsquerdo{
+    margin-left: "10px";
+}
 
 
 .centro {
