@@ -1,16 +1,19 @@
-<>
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.mask.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
 
+function gerarRecibo() {
+   document.getElementById('recebido_numero').innerHTML = document.getElementById('numero_recibo').value;
+   document.getElementById('recebido_valor').innerHTML = parseFloat(document.getElementById('valor').value).toLocaleString('pt-br', { minimumFractionDigits: 2 });
+   document.getElementById('recebido_contratante').innerHTML = document.getElementById('contratante').value;
+   document.getElementById('recebido_cpf_cnpj').innerHTML = document.getElementById('cpf_cnpj').value;
+   document.getElementById('recebido_referente').innerHTML = document.getElementById('referente').value;
+   document.getElementById('recebido_cidade').innerHTML = document.getElementById('cidade').value;
+   document.getElementById('recebido_data').innerHTML = dataAtual();
+   window.print();
+}
 
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.valor').mask( "#.##0,00", {reversed: true} )
-    })
-</script>
-</>
+function dataAtual() {
+   let data = new Date();
+   return data.getDate() + "-" + (data.getMonth() + 1) + "-" + data.getFullYear();
+}
 
 
 

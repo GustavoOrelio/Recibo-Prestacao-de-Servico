@@ -2,126 +2,195 @@
   <head>
     <title>Recibo de Prestação de Serviço</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="script.js" />
   </head>
 
   <body>
-    <h1>Recibo de Prestação de Serviço</h1>
-    <div class="centro">
-      <div>
-        <label style="margin-bottom: 1%">Valor Recebido:</label>
-        <input
-          placeholder="00,00"
-          type="text"
-          required
-          id="valor"
-          name="valor"
-          autofocus="autofocus"
-          class="espaco"
-        />
-        <br /><br />
-      </div>
-      <div>
-        <label>N° do recibo (opcional):</label>
-        <input type="int" class="espaco" />
-        <br /><br />
+    <div class="container">
+      <h1>Recibo de Prestação de Serviço</h1>
+      <div class="centro">
+        <div>
+          <label style="margin-bottom: 1%">Valor Recebido:</label>
+          <input
+            placeholder="00,00"
+            type="text"
+            required
+            id="valor"
+            class="espaco"
+          />
+          <br /><br />
+        </div>
+        <div>
+          <label>N° do recibo (opcional):</label>
+          <input type="int" class="espaco" id="numero_recibo" />
+          <br /><br />
+        </div>
+
+        <div>
+          <label>Contratante:</label>
+          <input type="text" class="espaco" id="contratante" />
+          <br /><br />
+        </div>
+        <div>
+          <label>CPF ou CNPJ (opcional):</label>
+          <input type="text" class="espaco" id="cpf_cnpj" />
+          <br /><br />
+        </div>
+        <div>
+          <label>Referente à:</label>
+          <input type="text" class="espaco" id="referente" />
+          <br /><br />
+        </div>
+        <div>
+          <label>Cidade:</label>
+          <input type="text" class="espaco" id="cidade" />
+          <br /><br />
+        </div>
+        <div>
+          <label>Data:</label>
+          <input type="date" class="espaco" id="data_recibo" />
+        </div>
       </div>
 
-      <div>
-        <label>Contratante:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
+      <h1>DADOS DO PRESTADOR DE SERVIÇO</h1>
+      <div class="centro">
+        <div>
+          <label>Nome do Prestador de Serviço:</label>
+          <input type="text" class="espaco" />
+          <br /><br />
+        </div>
+        <div>
+          <label>Endereço:</label>
+          <input type="text" class="espaco" />
+          <br /><br />
+        </div>
+        <div>
+          <label>Número:</label>
+          <input type="text" class="espaco" />
+          <br /><br />
+        </div>
+        <div>
+          <label>Bairro:</label>
+          <input type="text" class="espaco" />
+          <br /><br />
+        </div>
+        <div>
+          <label>Cidade:</label>
+          <input type="text" class="espaco" />
+          <br /><br />
+        </div>
+        <div>
+          <label>Estado:</label>
+          <select class="espaco" name="estado">
+            <option selected="" value="">Selecione o Estado...</option>
+            <option value="AC">Acre</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+          <br /><br />
+        </div>
+        <div>
+          <label>CEP:</label>
+          <input type="text" class="espaco" />
+          <br /><br />
+        </div>
+        <div>
+          <label>Telefone (opcional):</label>
+          <input type="text" class="espaco" />
+          <br /><br />
+        </div>
+        <div>
+          <label>CPF ou CNPJ opcional:</label>
+          <input type="text" class="espaco" />
+        </div>
+      </div>
+      <h1>FORMAS DE PAGAMENTOS:</h1>
+      <div class="centro">
+        <div>
+          <input type="radio" name="radio" />
+          <label>Dinheiro</label>
+        </div>
+        <div>
+          <input type="radio" name="radio" class="espacoEsquerdo" />
+          <label>Pix</label>
+        </div>
+        <div>
+          <input type="radio" name="radio" class="espacoEsquerdo" />
+          <label>Cheque</label>
+        </div>
+        <div>
+          <input type="radio" name="radio" class="espacoEsquerdo" />
+          <label>Transferência/Depósito</label>
+        </div>
+        <div>
+          <input type="radio" name="radio" class="espacoEsquerdo" />
+          <label>Cartão de Crédito/Débito</label>
+        </div>
       </div>
       <div>
-        <label>CPF ou CNPJ (opcional):</label>
-        <input type="number" class="espaco" />
-        <br /><br />
-      </div>
-      <div>
-        <label>Referente à:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
-      </div>
-      <div>
-        <label>Cidade:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
-      </div>
-      <div>
-        <label>Data:</label>
-        <input type="number" class="espaco" />
+        <div>
+          <button type="submit" onClick="gerarRecibo()">Gerar recibo</button>
+        </div>
       </div>
     </div>
 
-    <h1>DADOS DO PRESTADOR DE SERVIÇO</h1>
-    <div class="centro">
-      <div>
-        <label>Nome do Prestador de Serviço:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
+    <div class="print">
+      <div class="row">
+        <div>
+          <h1>Recibo de - <span class="" id="recebido_contratante"></span></h1>
+        </div>
       </div>
       <div>
-        <label>Endereço:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
+        <div>
+          <h4>Cidade: <span class="" id="recebido_cidade"></span></h4>
+        </div>
+        <div>
+          <h4>Valor R$: <span class="" id="recebido_valor"></span></h4>
+        </div>
+        <div>
+          <h4>Nº recibo: <span class="" id="recebido_numero"></span></h4>
+        </div>
       </div>
-      <div>
-        <label>Número:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
+      <div class="row">
+        <div>
+          <h4>Data: <span class="" id="recebido_data"></span></h4>
+        </div>
+        <div>
+          <h4>CPF ou CNPJ: <span class="" id="recebido_cpf_cnpj"></span></h4>
+        </div>
+        <div>
+          <h4>Referente à: <span class="" id="recebido_referente"></span></h4>
+        </div>
       </div>
-      <div>
-        <label>Bairro:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
-      </div>
-      <div>
-        <label>Cidade:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
-      </div>
-      <div>
-        <label>Estado:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
-      </div>
-      <div>
-        <label>CEP:</label>
-        <input type="number" class="espaco" />
-        <br /><br />
-      </div>
-      <div>
-        <label>Telefone (opcional):</label>
-        <input type="number" class="espaco" />
-        <br /><br />
-      </div>
-      <div>
-        <label>CPF ou CNPJ opcional:</label>
-        <input type="number" class="espaco" />
+      <div class="row">
+        <div>
+          <div class="assinatura">Assinatura</div>
+        </div>
       </div>
     </div>
-    <h1>FORMAS DE PAGAMENTOS:</h1>
-    <div class="centro">
-      <div>
-        <input type="radio" name="radio" />
-        <label>Dinheiro</label>
-      </div>
-      <div>
-        <input type="radio" name="radio" class="espacoEsquerdo" />
-        <label>Pix</label>
-      </div>
-      <div>
-        <input type="radio" name="radio" class="espacoEsquerdo" />
-        <label>Cheque</label>
-      </div>
-      <div>
-        <input type="radio" name="radio" class="espacoEsquerdo" />
-        <label>Transferência/Depósito</label>
-      </div>
-      <div>
-        <input type="radio" name="radio" class="espacoEsquerdo" />
-        <label>Cartão de Crédito/Débito</label>
-      </div>
-    </div>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
