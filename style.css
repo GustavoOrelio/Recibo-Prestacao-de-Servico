@@ -1,81 +1,134 @@
- @media print {
-    .print {
-        display: block;
-    }
-    .container {
-        display: none;
-    }
-} 
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 
 .container {
-    margin-top: 20px;
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 20px;
+  margin-top: 20px;
+  margin: auto;
+  width: 50%;
+  border: 1px solid #918c8c;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container2 {
+  margin: 20px;
+  width: 95%;
+  border: 1px solid #918c8c;
+  border-radius: 10px;
 }
 
 .row {
-    margin-top: 30px;
-}
-
-
-
-.print {
-    display: none;
+  margin-top: 30px;
 }
 
 .assinatura {
-    border-top: 1px solid #000;
-    text-align: center;
-    margin-top: 30px;
+  border-top: 1px solid #000;
+  text-align: center;
+  margin-top: 30px;
 }
 
-
-h3 {
-  font-size: 20px;
+.print {
+  display: none;
 }
 
-label {
-  font-size: 20px;
-  font-weight: bold;
+@media print {
+  .print {
+      display: block;
+  }
+
+  .container {
+      display: none;
+  }
 }
 
-p {
-  margin: 0%;
+.linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linha2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.linha3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 input {
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-select {
-  border: 1px solid;
-  border-radius: 5px;
-  padding: 5px;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
 button {
+  width: 70%;
+  background-color: #29a029;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 14px;
+  border: none;
   border-radius: 4px;
-  border: 2px solid #000000;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.gridRadios {
+  width: 20%;
+  float: left;
   padding: 15px;
-  margin: 25px;
 }
 
-.espaco {
-  margin-right: 20px;
+.coluna2 {
+  width: 40%;
+  float: left;
+  padding: 15px;
 }
 
-.espacoEsquerdo {
-  margin-left: "10px";
+.coluna1 {
+  width: 40%;
+  float: left;
+  padding: 15px;
 }
 
-.centro {
-  border: 2px solid #000;
-  padding: 5px;
-  overflow-y: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
+.coluna3 {
+  width: 40%;
+  float: left;
+  padding: 15px;
+}
+
+.coluna4 {
+  width: 100%;
+  float: left;
+  padding: 15px;
+}
+
+
+input.contratante {
+  width: 400px;
+  float: left;
+
+}
+input.cpf {
+  width:350px;
+}
+
+input.referente {
+  width:100%;
+}
+
+input.cidade {
+  width:100%;
+}
+
+input.data {
+  width:100%;
 }
