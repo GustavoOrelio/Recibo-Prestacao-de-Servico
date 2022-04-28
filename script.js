@@ -15,5 +15,19 @@ function dataAtual() {
    return data.getDate() + "-" + (data.getMonth() + 1) + "-" + data.getFullYear();
 }
 
+function mostrarPix() {
+   document.getElementById('pix').style.display = " block"
+   document.getElementById('cheque').style.display = " none"
+}
+function mostrarDinheiro() {
+   document.getElementById('pix').style.display = " none"
+   document.getElementById('cheque').style.display = " none"
+
+}
+function mostrarCheque() {
+   document.getElementById('cheque').style.display = " block"
+   document.getElementById('pix').style.display = " none"
+}
+
 
 
