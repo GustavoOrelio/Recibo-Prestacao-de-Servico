@@ -10,11 +10,11 @@
       <div class="linha">
         <div class="coluna1">
           <h4>Valor:</h4>
-          <input type="number" class="form-control" id="valor" />
+          <input type="text" class="form-control" id="valor" />
         </div>
         <div class="coluna2">
           <h4>Nº do recibo (opcional):</h4>
-          <input type="number" class="form-control" id="numero_recibo" />
+          <input type="text" class="form-control" id="numero_recibo" />
         </div>
         <div class="coluna3">
           <h4>Data:</h4>
@@ -34,7 +34,7 @@
       <div class="linha3">
         <div class="coluna1">
           <h4 class="cpf">CPF ou CNPJ (opcional):</h4>
-          <input type="number" class="cpf" id="cpf_cnpj" />
+          <input type="text" class="cpf" id="cpf_cnpj" />
         </div>
         <div class="coluna2">
           <h4 class="referente">Referente à:</h4>
@@ -223,34 +223,26 @@
     <div class="print">
       <div class="row">
         <div class="col-md-12">
-          <h1>Recibo de - <span class="" id="recebido_contratante"></span></h1>
+          <h1>Recibo de Prestação de Serviço</h1><br><br>
+          <h4>
+            Recebi(emos) de <span class="" id="recebido_contratante"></span> -
+            CPF/CNPJ nº <span class="" id="recebido_cpf_cnpj"></span>, a
+            importância de R$:
+            <span class="" id="recebido_valor"></span> referente à
+            <span class="" id="recebido_referente"></span>
+          </h4>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Cidade: <span class="" id="recebido_cidade"></span></h4>
-        </div>
-        <div class="col-md-4">
-          <h4>Valor R$: <span class="" id="recebido_valor"></span></h4>
-        </div>
-        <div class="col-md-4">
-          <h4>Nº recibo: <span class="" id="recebido_numero"></span></h4>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <h4>Data: <span class="" id="recebido_data"></span></h4>
-        </div>
-        <div class="col-md-4">
-          <h4>CPF ou CNPJ: <span class="" id="recebido_cpf_cnpj"></span></h4>
-        </div>
-        <div class="col-md-4">
-          <h4>Referente à: <span class="" id="recebido_referente"></span></h4>
+        <div class="col-md-12">
+          <h4>
+            Para maior clareza firmo(amos) o presente recibo para que produza os
+            seus efeitos, dando plena, rasa e irrevogável quitação, pelo valor
+            recebido.
+          </h4>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="assinatura">Assinatura</div>
+          <div class="assinatura">Assinatura do prestador de serviço</div>
         </div>
       </div>
     </div>
